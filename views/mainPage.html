@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GAME</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"> 
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="../public/style.css">
+        <link rel="stylesheet" href="../public/loading.css">
+        <link rel="icon" type="image/x-icon" href="../resources/favicon.ico" />
+    </head>
+    <body>
+        <div class="form-div">
+            <h3>MARVEL GAME</h3>
+            <input type="button" value="Random battle" class="buttons" onclick="randomBattle()"> <br><br>
+            <!-- <input type="button" value="Log out" class="buttons" onclick="makeLogout()">  -->
+            <form id="outForm" action="/logout" method="post">
+                <input type="submit" value="Log out" class="buttons" onclick="makeLogout()"> 
+            </form>
+        </div>
+        <div id="loading-div" class="loading-div">
+            <div class="text-div">
+                <p>M</p>
+                <p>A</p>
+                <p>R</p>
+                <p>V</p>
+                <p>E</p>
+                <p>L</p>
+                <p>G</p>
+                <p>A</p>
+                <p>M</p>
+                <p>E</p>
+                <span>Finding opponent...</span>
+            </div>
+        </div>
+
+        <script src="../helpers/getCookie.js"></script>
+        <script src="../scripts/mainPage-script.js"></script>
+    </body>
+</html>

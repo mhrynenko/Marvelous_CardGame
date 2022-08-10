@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GAME</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"> 
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
+        <link href="http://fonts.cdnfonts.com/css/among-us" rel="stylesheet">
+        <link rel="stylesheet" href="../public/style.css">
+        <link rel="stylesheet" href="../public/table.css">
+        <link rel="icon" type="image/x-icon" href="../resources/favicon.ico" />
+        <!-- TEMP CSS FILE, WE NEED NEW FOR FINISHING DIV -->
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id='enemyhand-div'></div>
+            <div id='enemyhero-div'>
+                <div id="enemyheroHealthpoints" class = "healthbar">10</div>
+                <div id="enemyhero" class="portrait"></div>
+            </div>
+
+            <div id='gamefield' style = "display:grid">
+                <div id="enemyfield-div"></div>
+
+                <div id="turnbutton-div">
+                    <div id="timer"></div>
+                    <button type="button" id="turn-btn" class = "button" onclick="turn.changeTurn(player.login, opponent.login)">Turn</button>
+                    <div id="mana">0/max</div>
+                </div>
+
+                <div id="myfield-div"></div>
+            </div>
+
+            <div id='myhero-div'>
+                <div id="myheroHealthpoints" class = "healthbar">10</div>
+                <div id="myhero" class="portrait"></div>
+            </div>
+            <div id='myhand-div'></div>
+
+            <div id = cards-extra-chooser>
+                <div id="extraCards-div">
+                    <ul id="extraCards-ul">
+                        <li id="extracard-7" class="extracard"></li>
+                        <li id="extracard-6" class="extracard"></li>
+                        <li id="extracard-5" class="extracard"></li>
+                        <li id="extracard-4" class="extracard"></li>
+                        <li id="extracard-3" class="extracard"></li>
+                        <li id="extracard-2" class="extracard"></li>
+                        <li id="extracard-1" class="extracard"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="cardchooser-div"></div>
+
+        <div id="finishing-div">
+            <span id="gameResult">RESULT</span><br><br>
+            <input type="button" class = "button" style = 'width:250px' value="Return to the main page" onclick="returnToMainPage()"> 
+        </div>
+
+        <script src="../helpers/player.js"></script>
+        <script src="../helpers/opponent.js"></script>
+        <script src="../helpers/turns.js"></script>
+        <script src="../helpers/mana.js"></script>
+        <script src="../helpers/getCookie.js"></script>
+        <script src="../helpers/arrayFuncs.js"></script>
+        <script src="../scripts/battlePage-script.js"></script>
+    </body>
+</html>

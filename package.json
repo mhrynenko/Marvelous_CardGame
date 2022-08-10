@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "interactjs": "^1.10.11",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.5",
+    "prompt-sync": "^4.2.0",
+    "ws": "^8.6.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "race01",
+  "version": "1.0.0",
+  "main": "client.js",
+  "author": "kkitsun, mhrynenko, manufriiev",
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ucode.world:connect-khpi/connect-fullstack-race01/kkitsun.git"
+  },
+  "description": "Marvel-themed card game project of FullStack Ucode Connect; Made by kkitsun, mhrynenko, manufriiev."
+}

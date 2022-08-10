@@ -1,0 +1,112 @@
+
+h3 {
+    font-family: 'Special Elite', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-shadow: rgb(240, 65, 65) 1px 0 10px;
+
+}
+
+.form-div {
+    width: 350px;
+    background-color: #611a1a;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 15px;
+}
+
+.errors {
+    font-size: 20px;
+    font-family: 'Special Elite', cursive;
+    color: rgb(255, 174, 174);
+}
+
+.status {
+    font-size: 20px;
+    font-family: 'Special Elite', cursive;
+    color: white;
+}
+
+.hrefButton {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Special Elite', cursive;
+    color: white;
+}
+
+.hrefButton:hover {
+    text-shadow: rgb(240, 65, 65) 1px 0 10px;
+}
+
+.messages {
+    font-size: 20px;
+    font-family: 'Special Elite', cursive;
+    color: white;
+}
+
+.textField {
+    font-family: 'Special Elite', cursive;
+    background-color:transparent;
+    border: 2px solid #b42222;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.textField:focus {
+    outline: none !important;
+    box-shadow: rgb(240, 65, 65) 1px 0 10px;
+}
+
+.buttons {
+    cursor: pointer;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    background-color: #ce8080;
+    border-radius: 10px;
+    border: none;
+}
+
+.buttons:hover {
+    box-shadow: rgb(240, 65, 65) 1px 0 10px;
+}
+
+.buttons:active, .hrefButton:active {
+    position: relative;
+    top: 1px;
+}
+
+form {
+    padding: 5px;
+    text-align: center;
+}
+
+body {
+    background: #e59292;
+}
+
+@keyframes glow {
+    0%{
+        box-shadow:    0 0 0px 0px rgb(50, 132, 255);  
+    }
+    50%{
+        box-shadow:    0 0 20px 15px rgb(50, 132, 255);
+    }
+    100%{
+        box-shadow:    0 0 0px 0px rgb(50, 132, 255);  
+    }
+  }
+
+.border {
+    animation: glow 2s linear infinite;
+    transform: scale(1.1);
+}

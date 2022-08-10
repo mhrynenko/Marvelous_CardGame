@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"> 
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="../public/style.css">
+    </head>
+    <body>
+        <div class="form-div">
+            <form id="regForm"> 
+                <h3>Registration</h3>
+                <span class="errors"></span>
+                <input type="text" name="login" placeholder="Login" class="textField" required><br><br>
+    
+                <input type="password" name="password" placeholder="Password" class="textField" required><br><br>
+
+                <input type="password" name="confirmPassword" placeholder="Confirm password" class="textField" required><br><br>
+
+                <input type="text" name="fullName" placeholder="Your full name" class="textField" required><br><br>
+
+                <input type="email" name="email" placeholder="E-mail" class="textField" required><br><br>
+    
+                <input type="submit" value="Save" class="buttons"> 
+                <input type="reset" value="Clear" class="buttons">   
+    
+                <br><br><a href="login" class="hrefButton">Back to the login</a>
+            </form>
+        </div>
+        <script src="../scripts/registration-script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,378 @@
+@import url('http://fonts.cdnfonts.com/css/among-us');
+body, html {
+    background-color: black;
+    background-image: url('../resources/bg.jpg');
+    height: 100%;
+    background-repeat     : no-repeat;
+    background-size       : cover;
+    background-position-x : 50%;
+    background-position-y : 50%;
+    overflow: hidden;
+}
+.wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 85px 106px 360px 106px 133px 103px;
+    grid-row-gap: 15.8px;
+}
+div {
+    user-select: none;
+    text-align: center;
+}
+
+.button {
+    display: inline-block; 
+    position: relative;
+    padding: 0 25px;
+    outline: none;
+    border-radius: 50px;
+    height: 28px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+    border: black;
+    background: linear-gradient(rgb(21, 21, 70), rgb(75, 23, 23));
+    color: rgb(187, 187, 187);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    vertical-align: middle;
+    transition: box-shadow 0.2s;
+    width: 140px;
+}
+.button:hover {
+    transition: all 0.2s;
+    box-shadow: inset 5em 5em 5em rgb(65 132 144 / 10%);
+}
+.button:active {
+    box-shadow: inset 5em 5em 5em rgb(65 132 144 / 10%);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    position:relative;
+    display: inline;
+    border: none;
+    margin: 0 auto;
+}   
+
+li {
+    /*display:inline-flex;
+    float:left;*/
+    display: inline-block;
+    width: 80px;
+    height:130px;
+    background-image:url('../resources/cardback.png');
+    background-size: cover;
+    background-repeat     : no-repeat;
+    color:black;
+    /*border:2px solid rgb(0 0 0);*/
+    border-radius:6px;
+    box-shadow: 1px 3px 20px rgba(0,0,0,.1);
+    /*font-size:25px;*/
+}
+
+.portrait{
+    width: 99px;
+    height: 75px;
+}
+
+#enemyhero-div {
+    background-image: url('../resources/enemyportrait.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 100px 105px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#myhero-div {
+    background-image: url('../resources/enemyportrait.png'); /*https://www.nicepng.com/png/full/164-1640360_the-lich-king-portrait-lich-king-hearthstone-hero.png*/
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 100px 105px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.healthbar{
+    font-size: inherit;
+    color:white;
+}
+
+#cardhand .card {
+    margin-right:-10px;
+    position:relative;
+    transition:transform .2s ease-out;
+}
+
+#cardchooser .card {
+    margin-left: 5px;
+    margin-right: 5px;
+    position:relative;
+    transition:transform .2s ease-out;
+    top: calc(50% - 100px);
+}
+
+li span {
+    display:inline-block;
+    position:relative;
+}	
+#enemyheroHealthpoints{
+    border-radius: 50%;
+}
+li.card:hover{
+    transform-origin:bottom;
+    transform: scale(1.5);
+    transition: all .30s ease-out;
+    z-index: 5000;
+}
+
+/*card stats*/
+.card img{
+    height: 129px;
+    width: 79px;
+    border-radius: 5%;
+    /*border-width:100px;
+    margin-top: -3px;
+    margin-left: -3px;
+    border-color: black;*/
+    position:relative;
+}
+.card span:nth-child(2){
+    color:rgb(255, 255, 255);
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 4, 236);
+    border-radius: 50%;
+    font-size: 20px;
+    left: -25px;
+    top:-130px;
+    float: none;
+    position: relative;   
+}
+.card span:nth-child(3){
+    color:rgb(255, 255, 255);
+    height: 50px;
+    width: 70px;
+    border-radius: 10%;
+    background-color: rgba(0, 4, 236, 0.308);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    font-family: fantasy;
+    letter-spacing: 0.5px;
+    float: none;
+    padding: 0;
+    margin: 0;
+    top: -95px;
+    position: relative;
+}
+.card span:nth-child(4){
+    color:rgb(255, 255, 255);
+    height: 25px;
+    width: 25px;
+    background-color: rgb(236, 28, 0);
+    border-radius: 50%;
+    font-size: 20px;
+    display: block;
+    float: none;
+    padding: 0;
+    margin: 0;
+    top: -110px;
+    left: 0px;
+    position: relative;
+}
+.card span:nth-child(5) {
+    color:rgb(255, 255, 255);
+    height: 25px;
+    width: 25px;
+    background-color: rgb(122, 0, 236);
+    border-radius: 50%;
+    font-size: 20px;
+    display: inline-block;
+    float: none;
+    padding: 0;
+    margin: 0;
+    top:-135px;
+    position: relative;
+    left: 25px;
+}
+
+
+ul > li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+}
+
+.enemyCard {
+    background-color: aqua;
+    padding: 0;
+    transform: rotate(0.5turn);
+    height: 78px;
+}
+
+#cardchooser-div {
+    display: none;
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+
+}
+
+#gamefield {
+    background-image: url('../resources/battlegroundstone.png');
+    height:100%;
+    background-repeat     : no-repeat;
+    background-size       : 70% 100%;
+    background-position: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px 40px 160px;
+}
+
+#myfield-div, #enemyfield-div {
+    display: flex;
+    align-items: center; 
+    width:92%;
+    margin-left:4%;
+    justify-content: center;
+}
+
+#myfield-div .card, #enemyfield-div .card{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#finishing-div {   
+    display:none; 
+    background: rgb(27,0,36);
+    background: linear-gradient(135deg, rgba(27,0,36,1) 0%, rgba(92,9,121,1) 50%, rgba(3,15,57,1) 100%);
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#finishing-div span {
+    position: relative;
+    top:45%;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+ 
+.animate-win{
+  background-image: linear-gradient(-225deg,#ff2802 0%,#73d820 29%,#d7e42c 67%,#ff2802 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  text-fill-color: transparent;
+
+  display: inline-block;
+      font-size: 190px;
+}
+.animate-lose
+{
+  background-image: linear-gradient(-225deg,#3f3c91 0%,#6d33b1 29%,#2d812a 67%,#3f3c91 100% );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+
+#finishing-div input {
+    position: relative;
+    top:45%;
+}
+
+#extraCards-div {
+    display: none;
+}
+
+.extracard {
+    margin-left: -100px;
+    padding: 0;
+    height: 95px;
+}
+
+#mana{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 110px;
+    color: white;
+    background-image: url('../resources/manacrystal.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: 40px 36px
+}
+
+#timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 110px;
+    color: black;
+    background-image: url('../resources/timer.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: 36px 36px;
+    font-weight: 800;
+}
+
+#enemyhand-div {
+    background-image: url('../resources/blackrockreversed.png');
+    background-repeat     : repeat;
+    background-size       : contain;
+    background-position: center;
+}
+
+#cards-extra-chooser {
+    background-image: url('../resources/blackrock.png');
+    background-repeat     : repeat;
+    background-size       : contain;
+    background-position: center;
+}
+
+#turnbutton-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#gameResult{
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 40px;
+    text-align: center;
+}
