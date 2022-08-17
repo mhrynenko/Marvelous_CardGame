@@ -63,11 +63,11 @@ wss.on('connection', (ws) => {
 
         switch(message.event){
             case 'loggedIn':
-                loggedInUseres.set(message.login, Array.from(wss.clients.values()).pop());
+                loggedInUseres.set(message.login, ws);
             break;
 
             case 'loggedInBattlePage':
-                loggedInUseres.set(message.login, Array.from(wss.clients.values()).pop());                
+                loggedInUseres.set(message.login, ws);               
 
                 loggedInUseres.get(message.login).send(JSON.stringify({
                     event : "chooseCards",
